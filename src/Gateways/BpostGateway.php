@@ -15,6 +15,7 @@ class BpostGateway implements Gateway
     {
         $this->client = new Client([
             'base_uri' => 'https://webservices-pub.bpost.be/ws/ExternalMailingAddressProofingCSREST_v1/',
+            'verify' => false
         ]);
     }
 
